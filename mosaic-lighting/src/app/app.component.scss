@@ -1,0 +1,45 @@
+.app-container {
+    height: 100vh;
+  }
+  
+  .upper-content {
+    background-color: #555555;
+    display: flex;
+    height: 40px;
+  }
+  
+  .left-content {
+    padding: 20px;
+    background-color: #3e3e3e;
+    color: white;
+    mat-list {
+        padding: 20px;
+    }
+    button, mat-list-item {
+        cursor: pointer;
+        color: white;
+        transition-property: transform, color;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    button:hover, mat-list-item:hover {
+        transform: scale(1.2);
+        color: #ff8bb2;
+    }
+
+    mat-list-item a.active{
+        font-weight: 500;
+        font-size: large;
+    }
+    
+  }
+
+  @keyframes scale-up {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+    transform: scale(1.5);
+    }
+  }
